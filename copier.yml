@@ -1,0 +1,7 @@
+# Configuración de la plantilla Copier para proyectos dbt
+# Plantilla simple que solo configura el nombre del proyecto
+
+project_name:
+    type: str
+    default: "my-dbt-project"
+    help: "Nombre del proyecto dbt"

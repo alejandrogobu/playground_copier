@@ -1,0 +1,23 @@
+# Archivos que Copier debe ignorar al copiar la plantilla
+.copier-answers.yml
+.copierignore
+.git/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+target/
+dbt_packages/
+logs/
+*.log
+.DS_Store
+.vscode/
+.idea/
+profiles.yml
+pyproject.toml
+uv.lock
+.python-version
