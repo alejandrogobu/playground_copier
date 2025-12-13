@@ -4,6 +4,8 @@ Proyecto dbt generado con Copier.
 
 > **Nota**: Este proyecto fue creado usando una plantilla de Copier.
 
+> **Actualización**: Este README fue actualizado usando `copier update`.
+
 ## Configuración
 
 Este proyecto está configurado para usar con **dbt Cloud**. La configuración de conexión al data warehouse se realiza a través de la interfaz de dbt Cloud.
