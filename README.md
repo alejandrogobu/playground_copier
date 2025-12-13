@@ -6,6 +6,8 @@ Proyecto dbt generado con Copier.
 
 > **Actualización**: Este README fue actualizado usando `copier update`.
 
+> **Prueba de actualización**: Este es un cambio mínimo para validar que `copier update` funciona.
+
 ## Configuración
 
 Este proyecto está configurado para usar con **dbt Cloud**. La configuración de conexión al data warehouse se realiza a través de la interfaz de dbt Cloud.
