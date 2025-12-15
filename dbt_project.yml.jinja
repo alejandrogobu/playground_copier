@@ -16,4 +16,23 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+models:
+  +transient: false
+  +persist_docs:
+    relation: true
+    columns: true
+  {{ project_name }}:
+    marts:
+    +database: "workshop_{% raw %}{{ env_var('DBT_ENVIRONMENT') }}{% endraw %}_gold"
+    staging:
+      +database: "workshop_{% raw %}{{ env_var('DBT_ENVIRONMENT') }}{% endraw %}_silver"
 
+  dbt_project_evaluator:
+    +database: "workshop_{% raw %}{{ env_var('DBT_ENVIRONMENT') }}{% endraw %}_silver"
+    +schema: dbt_project_evaluator
+    +static_analysis: unsafe
+  
+seeds:
+  dbt_project_evaluator:
+    +database: "workshop_{% raw %}{{ env_var('DBT_ENVIRONMENT') }}{% endraw %}_silver"
+    +schema: dbt_project_evaluator
