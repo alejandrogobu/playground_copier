@@ -10,4 +10,6 @@ _exclude:
   - "**/uv.lock"
   - "**/main.py"
   - "**/.DS_Store"
+  - "**/.git/**"
+  - "**/.git"
 
