@@ -1,0 +1,8 @@
+.venv/
+.python-version
+pyproject.toml
+uv.lock
+main.py
+.DS_Store
+
+
