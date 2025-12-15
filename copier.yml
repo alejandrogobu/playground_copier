@@ -2,3 +2,12 @@ project_name:
   type: str
   help: Nombre del proyecto dbt (se usará como `name` en dbt_project.yml y como nombre del directorio).
 
+# Ficheros/carpetas que pueden existir en el repo del template pero NO deben copiarse al proyecto generado.
+_exclude:
+  - "**/.venv/**"
+  - "**/.python-version"
+  - "**/pyproject.toml"
+  - "**/uv.lock"
+  - "**/main.py"
+  - "**/.DS_Store"
+
