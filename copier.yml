@@ -1,0 +1,15 @@
+project_name:
+  type: str
+  help: Nombre del proyecto dbt (se usará como `name` en dbt_project.yml y como nombre del directorio).
+
+# Ficheros/carpetas que pueden existir en el repo del template pero NO deben copiarse al proyecto generado.
+# (Útil si en este repo conviven cosas de `uv`/Python u otros artefactos de desarrollo.)
+exclude:
+  - "**/.venv/**"
+  - "**/.python-version"
+  - "**/pyproject.toml"
+  - "**/uv.lock"
+  - "**/main.py"
+  - "**/.DS_Store"
+
+

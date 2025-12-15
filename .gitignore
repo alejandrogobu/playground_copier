@@ -1,0 +1,15 @@
+# Entorno Python / uv
+.venv/
+.python-version
+uv.lock
+
+# Cachés Python
+__pycache__/
+*.py[cod]
+
+# Archivos de sistema / editor
+.DS_Store
+.idea/
+.vscode/
+
+
